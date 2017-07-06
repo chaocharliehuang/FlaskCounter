@@ -9,5 +9,11 @@
     <body>
         <h1>Counter</h1>
         <p>{{ session['count'] }} time(s)</p>
+        <form action='/add2' method='post'>
+            <input type="submit" name="add2" value="+2">
+        </form>
+        <form action='/reset' method='post'>
+            <input type="submit" name="reset" value="reset">
+        </form>
     </body>
 </html>
